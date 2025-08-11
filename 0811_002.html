@@ -17,9 +17,21 @@
         div span:nth-child(4){
             color: olive;
         }
+
+        /* 자식 요소중에, nth는 몇번째 자식인지 찾아서 부여하는 설정
+        그치만 이게 h2에서의 몇번째 자식인지 찾는게 아님
+        중간에 p가 껴있으면, h2의 4번째가 아닌 아티클의 4번째 > 바나나  */
     </style>
 </head>
 <body>
+    <article>
+        <h2>Apple</h2>
+        <h2>Mango</h2>
+        <h2>Banana</h2>
+        <h2>Melon</h2>
+        <h2>Tomato</h2>
+    </article>
+
     <div class="parent">
         Parent
         <span>Child Span</span>
