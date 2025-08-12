@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button type="button">일반 버튼 </button>
+    <button type="submit">제출 버튼</button>
+    <button type="reset">버튼 초기화</button>
+
+    <button type="button" onclick="modalPopup()">모달팝업 띄우기</button>
+    <button type="button" onclick="alertPopup()">Alert 띄우기</button>
+    <button type="button" onclick="confirmPopup()">Confirm 띄우기</button>
+
+    <form id="loginForm" action="./login.html">
+        <input type="text" placeholder="아이디 입력" required>
+        <input type="password" placeholder="비밀번호 입력" required>
+        <!-- 값: value 
+        value랑 placeholder의 값은 달라야함-->
+        <!-- required는 유효성 검사로, 값을 입력해야 넘어감  -->
+        <input type="file">
+        <!-- 첨부파일 -->
+    </form>
+
+    <select>
+        <option>KOREAN</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+        <option>English</option>
+    </select>
+
+    <article>
+        <h1>hi</h1>
+        <p>hi</p>
+    </article>
+    <a href="/0811_001.html" title="문서보기" target="_blank">어제 만든 파일 보기001</a>
+    <a href="/0811_002.html">어제 만든 파일 보기002</a>
+    <!-- 로컬 절대경로 슬러시 -->
+
+    <!--vs코드 단축키
+    1. 한줄복사 Alt + Shift + 방향키
+    2. 줄이동 Alt + 방향키
+    3. 주석문 Ctrl + / -->
+
+    <h1>
+        document
+        <span></span>
+    </h1>
+    <!-- 블럭요소 안에 인라인 요소 넣는 것은 가능하나 그 반대는 불가 -->
+</body>
+</html>
