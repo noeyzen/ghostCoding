@@ -68,7 +68,7 @@ a{
     margin-bottom: 36px;
 }
 
-.all-container a{
+.all-container .btn a{
     width: 270px;
     height: 56px;
     border-radius: 12px;
