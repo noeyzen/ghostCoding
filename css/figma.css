@@ -78,6 +78,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
 }
 
 .all-container .btn1{
