@@ -68,11 +68,16 @@ a{
     margin-bottom: 36px;
 }
 
-.all-container button{
+.all-container a{
     width: 270px;
     height: 56px;
-    background-color: #2c2c2c;
     border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .all-container .btn1{
@@ -82,9 +87,5 @@ a{
 }
 .all-container .btn2{
     border: 2px solid white;
-}
-.all-container button a{
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+    background-color: #2c2c2c;
 }
