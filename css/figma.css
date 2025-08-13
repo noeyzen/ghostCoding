@@ -6,15 +6,16 @@ body{
     font-family: sans-serif;
     text-align: center;
     display: flex;
-    
     width: 375px;
     height: 812px;
+    /* border: 1px solid white; */
 }
 section{
     margin: auto;
     padding: 24px;
     justify-content: center;
     align-items: center;
+    
 }
 img{
     margin-bottom: 24px;
