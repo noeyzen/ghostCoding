@@ -68,6 +68,12 @@ a{
     margin-bottom: 36px;
 }
 
+.all-container .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .all-container .btn a{
     width: 270px;
     height: 56px;
@@ -75,10 +81,10 @@ a{
     font-size: 20px;
     font-weight: 600;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .all-container .btn1{
