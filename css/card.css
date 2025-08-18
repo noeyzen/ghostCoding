@@ -6,8 +6,13 @@
     border: 1px solid black;
 }
 
+.card-container .thumb{
+    height: 250px;
+    overflow: hidden;
+}
 .card-container .thumb img{
     width: 100%;
+    object-fit: cover;
 }
 
 .contents{
@@ -27,14 +32,12 @@
 }
 
 .contents .tag-container{
-    list-style: none;
     display: flex;
-    justify-content: flex-start;
     gap: 12px;
     flex-wrap: wrap;
 }
 
-.contents .tag-container li{
+.contents .tag-container li a{
     background-color: rgba(144, 144, 144, 0.2);
     display: flex;
     align-items: center;
@@ -45,6 +48,6 @@
     border-radius: 24px;
 }
 
-.contents .tag-container li:hover{
+.contents .tag-container li a:hover{
     background-color: rgba(144, 144, 144, 0.4);
 }
