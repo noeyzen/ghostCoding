@@ -1,6 +1,10 @@
 @charset "utf-8";
 
+body{
+    font-family: sans-serif;
+}
 .card-container{
+    margin: 0 auto;
     width: 400px;
     border-radius: 20px;
     border: 1px solid black;
@@ -26,8 +30,9 @@
 }
 
 .contents p{
-    font-size: 14px;
+    font-size: 1.2em;
     margin: 12px 0;
+    text-align: justify;
 }
 
 .contents .tag-container{
@@ -38,14 +43,20 @@
 
 .contents .tag-container li a{
     background-color: rgba(144, 144, 144, 0.2);
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    height: 32px;
-    padding: 0 24px;
-    border-radius: 24px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 1em;
+    line-height: 1;   
+    min-height: 32px;
 }
 
 .contents .tag-container li a:hover{
     background-color: rgba(144, 144, 144, 0.4);
+}
+
+.contents .tag-container a::before{
+    content: "#";
+    margin-right: 4px;
 }
