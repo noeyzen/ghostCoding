@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .box1{
+            background-color: #ffc0cb;
+            height: 400px;
+        }
+        .box1 p{
+            background-color: rgba(255,255,255,0.5);
+            transition: 0.5s;
+            translate: 0 30px;
+            opacity: 0;
+            /* transition-property: all;
+            transition-duration: 0.8s;
+            transition-delay: 0.5s; */
+        }
+        .box1:hover p{
+            background-color: rgba(255,255,255,0.8);
+            opacity: 1;
+            translate: 0 0;
+            color: rgb(117, 79, 79);
+            font-size: 2em;
+        }
+        .box1 img{
+            margin-top: 100px;
+            width: 90px;
+            transition: translate 0.5s, scale 0.5s 0.5s, rotate 0.5s 1s;
+            /* 0.8s 1s면 뒤에 숫자는 딜레이 */
+        }
+        .box1:hover .box1 img{
+            translate: 300px 0;
+            scale: 1.5;
+            rotate: 1080deg;
+        }
+
+        .thumb{
+            width: 200px;
+            height: 170px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin: 50px auto;
+            border: 1px solid red;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: 0.8s;
+        }
+
+        .thumb img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.8s;
+        }
+
+        .thumb:hover {
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
+        }
+        .thumb:hover img{
+            scale: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Transition Test</p>
+        <img src="./image/ghost_n1.png" alt="">
+    </div>
+
+    <div class="thumb">
+        <img src="./image/card_thumb_0.jpg" alt="">
+    </div>
+</body>
+</html>

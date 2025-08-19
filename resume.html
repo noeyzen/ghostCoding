@@ -8,6 +8,7 @@
     <style>
         .tbox{
             margin: 0 auto;
+            margin-bottom: 50px;
             max-width: 800px;
             width: 100%;
             border-top: 4px solid black;
@@ -17,7 +18,7 @@
             text-align: center;
             font-size: 36px;
             font-weight: 800;
-            margin: 20px auto;
+            margin: 50px auto;
         }
         .tbox caption{
             text-align: left;
@@ -33,10 +34,28 @@
             border-bottom: 1px solid gray;
         }
 
-        .tbox td:last-child{
+        .tbox td:last-child,
+        .tbox th:last-child{
             border-right: 0;
         }
 
+        .tbox td.last_line,
+        .tbox th.last_line{
+            border: 1px solid gray;
+        }
+
+        .tbox td:empty::before{
+            content: "-";
+        }
+        
+        .tbox li::before{
+            content: "-";
+            margin-right: 4px;
+        }
+
+        .tbox th:last-child{
+
+        }
 
     </style>
 </head>
@@ -74,6 +93,121 @@
                 <th scope="row">Portfolio</th>
                 <td>https://</td>
             </tr>                                   
+    </table>
+
+    <table class="tbox">
+        <caption>학력사항</caption>
+        <colgroup>
+            <col style="width:calc(100% / 5);" span="5">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th scope="col">입학년도</th>
+            <th scope="col">졸업년도</th>
+            <th scope="col">학교명</th>
+            <th scope="col">학과</th>
+            <th scope="col">구분</th>
+        </tr>
+        <tr>
+            <td>1990</td>
+            <td>1992</td>
+            <td>고스트 고등학교</td>
+            <td>인문</td>
+            <td>졸업</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td></td>
+            <td>서울대학교</td>
+            <td>컴퓨터공학</td>
+            <td>재학중</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="tbox">
+        <caption>기술스택</caption>
+        <colgroup>
+            <col style="width: 200px;">
+            <col>
+        </colgroup>
+        <tr>
+            <th scope="row">기술스택</th>
+            <td>
+                <ul>
+                    <li>JavaScript(ES6+)</li>
+                    <li>HTML5, CSS4, Sass, Tailwind CSS</li>
+                    <li>React, Nest.js, Vue</li>
+                    <li>Node.js, Express, MongoDB</li>
+                    <li>Git, GitHub, Figma, VS Code</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">프로젝트 경험</th>
+            <td>
+                <ul>
+                    <strong>1. 날씨 + 메모 웹앱 (2024) </strong>
+                    <li>기술: Vanilla Js, OpenWeather API, LocalStorage</li>
+                    <li>주요 기능: 실시간 날씨 조회 + 메모 저장, 모바일 대응</li>
+                    <strong>2. 쇼핑몰 클론 프로젝트 (2023) </strong>
+                    <li>기술: React, Redux Toolkit, Firebase Auth</li>
+                    <li>주요 기능: 상품 CRUD, 장바구니, 결제 흐름, 사용자 인증</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table class="tbox">
+        <caption>경력사항</caption>
+        <colgroup>
+            <col style="width: 200px;">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th scope="col" rowspan="2">회사명</th>
+            <th scope="col" colspan="2">근무기간</th>
+            <th scope="col" rowspan="2">직급</th>
+            <th scope="col" rowspan="2">비고</th>
+        </tr>
+        <tr>
+            <th scope="row">입사일</th>
+            <th scope="row" class="last_line">퇴사일</th>
+        </tr>
+        
+        <tr>
+            <td>주식회사 코딩고스트</td>
+            <td>2022.02.01</td>
+            <td>2024.04.01</td>
+            <td>대표</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>이랑이 코프</td>
+            <td>2020.01.01</td>
+            <td>2022.01.01</td>
+            <td>프리랜서</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
 </body>
 </html>
