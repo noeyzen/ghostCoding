@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .tbox{
+            margin: 0 auto;
+            max-width: 800px;
+            width: 100%;
+            border-top: 4px solid black;
+            border-bottom: 2px solid black;
+        }
+        h1{
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            margin: 20px auto;
+        }
+        .tbox caption{
+            text-align: left;
+            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .tbox th{
+            background-color: #f3f3f3;
+        }
+        .tbox td, .tbox th{
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .tbox td:last-child{
+            border-right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>RESUME</h1>
+    <table class="tbox">
+        <caption>기본정보</caption>
+        <colgroup>
+            <col style="width: 120px;">
+            <col style="width: 100px;">
+            <col>
+            <col style="width: 100px;">
+            <col>
+        </colgroup>
+            <tr>
+                <td rowspan="5">사진</td>
+                <th scope="row">이름</th>
+                <td>Hong Gil Dong</td>
+                <th scope="row">생년월일</th>
+                <td>1996.11.07</td>
+            </tr>
+            <tr>
+                <th scope="row">전화</th>
+                <td>010-1234-5678</td>
+                <th scope="row">이메일</th>
+                <td>xxxx@gmail.com</td>
+            </tr>
+            <tr>
+                <th scope="row">주소</th>
+                <td colspan="3">Seoul, Korea</td>
+            </tr>
+            <tr>
+                <th scope="row">GitHub</th>
+                <td>https://github.com/noeyzen/ghostCoding</td>
+                <th scope="row">Portfolio</th>
+                <td>https://</td>
+            </tr>                                   
+    </table>
+</body>
+</html>

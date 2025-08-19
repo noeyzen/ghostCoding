@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .box1{
+            border: 1px solid red;
+            /*
+            border 하고 적는 코드는 축약형 
+            border-width: 1px;
+            border-style: solid;
+            border-color: red;
+             */
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+        }
+
+        .box1 p{
+            border-left: 5px solid teal;
+            padding-left: 12px;
+            margin-left: 20px;
+        }
+
+        .box2{
+            margin: 50px auto;
+            width: 500px;
+            padding: 50px 30px;
+            border: 1px solid gray;
+            border-radius: 40px;
+        }
+
+        .box2 h1{
+            font-size: 36px;
+            font-weight: 600;
+            font-family: serif;
+            border-bottom: 2px solid rgba(0,0, 0, 0.2);
+            letter-spacing: 3px;
+            padding-bottom: 20px;
+            padding-left: 45px;
+            background: url('./image/icons/folderopen.svg')
+            no-repeat left top 11px/auto 36px;
+        }
+        
+        .box2 p{
+            font-size: 14px;
+            line-height: 2;
+            margin-top: 20px;
+        }
+        
+        .box2 mark{
+            background-color: teal;
+            color: white;
+        }
+
+
+    </style>
+<body>
+    <article class="box2">
+        <h1>Today News</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Accusamus officiis vitae explicabo neque illum voluptates 
+            <mark>modi optio obcaecati animi ducimus dolorum,</mark>
+            magni impedit ad. Laboriosam quaerat quis ipsum fuga quia!
+        </p>
+    </article>
+    <div class="box1">
+        Hello, World
+        <p>Greate Coding</p>
+    </div>
+</body>
+</html>
