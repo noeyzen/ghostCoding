@@ -1,2 +1,163 @@
 @charset "utf-8";
 
+body{
+    position: relative;
+    background-color: black;
+}
+header{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%,
+    rgba(46,22,28,0) 100%);
+}
+
+header .navbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+header .navbox img{
+    width: 150px;
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* align-items: center; */
+
+}
+header .navbox .lang{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+header .navbox button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    padding: 4px 22px;
+    border-radius: 4px;
+    color: white;
+}
+
+.main .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+    background: url('/image/neflix_bg.jpg') no-repeat center center / cover;
+}
+.main .bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.main .txtbox2{
+    /* border: 1px solid blue; */
+    color: white;
+}
+.main h1{
+    
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main h2{
+    margin-bottom: 24px;
+}
+
+.main h3{
+    margin-bottom: 10px;
+}
+
+.main .mailbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+}
+
+.main .mailbox input{
+    width: 300px;
+    height: 52px;
+    border: 1px solid rgb(214, 214, 214);
+    color: rgb(214, 214, 214);
+    padding: 16px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.main .mailbox button{
+    width: 120px;
+    height: 52px;
+    background-color: red;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.member {
+    margin: 40px auto;
+    width: calc(100% - 120px);
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 29, 124);
+    transition: 0.5s;
+}
+
+.member .txtbox3{
+    color: white;
+}
+
+.member .txtbox3 p:first-child{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+
+.member button{
+    border-radius: 4px;
+    width: 120px;
+    height: 32px;
+    color: white;
+    background-color: rgb(106, 92, 155);
+}
+
+.member:hover {
+    scale: 1.1;
+    background-color: rgb(64, 37, 165);
+}
