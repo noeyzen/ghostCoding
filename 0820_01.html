@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f3f3f3;
+        }
+
+        .container{
+            width: 400px;
+            height: 600px;
+            margin: 50px auto;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        .line-container{
+            text-align: center;
+            position: relative;
+        }
+
+        .line-container::before,
+        .line-container::after
+        {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 1px;
+            background-color: #00ff2f;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+        }
+
+        .line-container::before {
+            left: 8px;
+        }
+        .line-container::after {
+            right: 8px;
+            z-index: 0;
+        }
+        .line-container strong{
+            background-color: white;
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line-container">
+            <strong>
+                또는
+            </strong>
+        </div>
+    </div>
+</body>
+</html>
