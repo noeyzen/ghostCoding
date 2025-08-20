@@ -17,7 +17,7 @@ header .navbox{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px 120px;
 }
 
 header .navbox img{
@@ -126,17 +126,24 @@ header .navbox button{
     border-radius: 4px;
 }
 
-.member {
+.sec2{
     margin: 40px auto;
     width: calc(100% - 240px);
-    height: 100%;
-    padding: 10px 20px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s;
+    gap: 20px;
+}
+.member {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(50, 29, 124);
-    transition: 0.5s;
+
 }
 
 .member .txtbox3{
@@ -157,7 +164,10 @@ header .navbox button{
     background-color: rgb(106, 92, 155);
 }
 
-.member:hover {
+.sec2:hover {
     scale: 1.1;
+}
+
+.sec2:hover .member{
     background-color: rgb(64, 37, 165);
 }
