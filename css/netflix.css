@@ -200,6 +200,7 @@ header .navbox button{
     width: 180px;
     height: 260px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .sec3 ol li a{
