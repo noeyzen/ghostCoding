@@ -236,6 +236,7 @@ header .navbox button{
     z-index: 1000;
     left: 0;
     transform: translateX(-50%);
+    text-shadow: 6px 6px 20px rgba(0,0,0,0.8);
 }
 
 
