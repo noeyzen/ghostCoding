@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/reset.css">
     <style>
         .searchcontainer{
-            /* border: 1px solid red; */
+            border-radius: 10px;
             width: 400px;
-            height: 200px;
             margin: 50px auto;
-            box-shadow: 8px 8px 0 rgba(3, 8, 163, 0.4);
+            padding: 20px 40px;
+            box-shadow: 8px 8px 0 rgba(109, 113, 218, 0.4);
             background-color: aliceblue;
             display: flex;
             flex-direction: column;
@@ -19,16 +19,15 @@
         }
 
         .searchcontainer a{
-            margin-right: 50px;
+            margin-top: 10px;
             display: flex;
             justify-content: flex-end;
             color: gray;
         }
 
         .inputcontainer{
-            width: calc(100% - 20px);
+            width: 100%;
             margin: 0 auto;
-            padding: 10px 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -37,22 +36,31 @@
         .inputcontainer .sbar{
             width: 100%;
             height: 46px;
-            border: 1px solid rgb(131, 131, 131);
-            padding: 10px 40px;
-            /* color: rgb(219, 219, 219); */
-            background: url(../image/icons/search.svg) no-repeat left center/ 32px;
+            border: 3px solid rgb(131, 131, 131, 0.4);
+            padding: 10px 50px;
+            background: url(../image/icons/search.svg) no-repeat 10px center/ 32px;
             font-size: 18px;     
-            margin-bottom: 20px;       
+            margin-bottom: 10px;
+            border-radius: 40px;
         }
 
         .inputcontainer .sbtn{
             width: 100%;
             height: 46px;
-            border-radius: 10px;
+            border-radius: 40px;
             background-color: rgb(37, 44, 255);
             color: white;
             text-align: center;
             font-size: 18px;            
+        }
+
+        .sbar::placeholder {
+            color: rgb(127, 127, 127);
+        }
+
+        .sbar:focus {
+            outline: 1px solid gray;
+            color: rgb(37, 44, 255);
         }
     </style>
 </head>
