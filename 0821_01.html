@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .searchcontainer{
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 200px;
+            margin: 50px auto;
+            box-shadow: 8px 8px 0 rgba(3, 8, 163, 0.4);
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .searchcontainer a{
+            margin-right: 50px;
+            display: flex;
+            justify-content: flex-end;
+            color: gray;
+        }
+
+        .inputcontainer{
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            padding: 10px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .inputcontainer .sbar{
+            width: 100%;
+            height: 46px;
+            border: 1px solid rgb(131, 131, 131);
+            padding: 10px 40px;
+            color: rgb(219, 219, 219);
+            background: url(../image/icons/search.svg) no-repeat left center/ 32px;
+            font-size: 18px;     
+            margin-bottom: 20px;       
+        }
+
+        .inputcontainer .sbtn{
+            width: 100%;
+            height: 46px;
+            border-radius: 10px;
+            background-color: rgb(37, 44, 255);
+            color: white;
+            text-align: center;
+            font-size: 18px;            
+        }
+    </style>
+</head>
+<body>
+    <div class="searchcontainer">
+        <form action="./searchResult.html">
+            <fieldset>
+                <!-- 필드가 어떤건지 설명하는 것 -->
+                <legend class="blind">검색</legend>
+                <div class="inputcontainer">
+                    <input class="sbar" type="search" placeholder="Search here"
+                    required="required">
+                    <button class="sbtn" type="submit">Search</button>
+                </div>
+            </fieldset>
+            <a href="./searchResult.html">Advanced Search</a>
+        </form>
+    </div>
+</body>
+</html>
