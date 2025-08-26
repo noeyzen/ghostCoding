@@ -6,15 +6,32 @@
     <title>Google</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/google.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="container">
         <ul class="navbar">
-            <li class="navli"><a href="#">Gmail</a></li>
-            <li class="navli"><a href="#">이미지</a></li>
-            <li class="navli"><a href="#"><img src="./image/icons/google_lab.png" alt="labicon"></a></li>
-            <li class="navli"><a href="#"><img src="./image/icons/google_menu.svg" alt="menuicon"></a></li>
-            <li class="navli profile"><a href="#"><img src="./image/profile_0.jpg" alt="profileicon"></a></li>
+            <li class="navli navtext">
+                <a href="#">Gmail</a>
+            </li>
+            <li class="navli navtext">
+                <a href="#">이미지</a>
+            </li>
+            <li class="navli navicon">
+                    <a href="#" class="nav-wrap">
+                        <img src="./image/icons/google_lab.png" alt="lapicon">
+                    </a>
+            </li>
+            <li class="navli navicon">
+                    <a href="#" class="nav-wrap">
+                        <img src="./image/icons/vento_wt.svg" alt="menuicon">
+                    </a>
+            </li>
+            <li class="navli navicon">
+                    <a href="#" class="nav-wrap">
+                        <img src="./image/profile_0.jpg" alt="profileicon" class="profile">
+                    </a>
+            </li>
         </ul>
     </nav>
     <div class="container">
@@ -29,12 +46,72 @@
         </form>
     </div>
 
-    <div class="container box2">
-        <ul>
+    <div class="container card">
+        <ul class="card-list">
             <li>
                 <a href="#">
-                    <!-- <img src="./image/icons/cafe.svg" alt="cafe"> -->
-                    카페
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/kakao-1.svg" alt="kakao">
+                    </div>
+                    <p>카카오</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/insta-1.svg" alt="insta">
+                    </div>
+                    <p>인스타그램</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/google-1.svg" alt="google">
+                    </div>
+                    <p>구글</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/naver-1.svg" alt="naver">
+                    </div>
+                    <p>네이버</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/discord-1.svg" alt="discord">
+                    </div>
+                    <p>디스코드</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <img src="./image/icons/snsicon/twitter-1.svg" alt="twitter">
+                    </div>
+                    <p>X</p>
+                    <button class="button">
+                        <img src="./image/icons/meatball_gr.svg" alt="btn">
+                    </button>
                 </a>
             </li>
         </ul>
