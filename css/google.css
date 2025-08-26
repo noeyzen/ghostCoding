@@ -87,7 +87,7 @@ body{
 }
 
 .search-bar .sbar:focus{
-    border-radius: 80ps;
+    border-radius: 80px;
 }
 
 .search-bar .s-icon {
