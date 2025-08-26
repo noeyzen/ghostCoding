@@ -1,0 +1,89 @@
+@charset "utf-8"
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* font-family: ; */
+}
+
+body{
+    /* 포지션 뒤에 크기속성이 나오면 됨 */
+    background: url('../image/google_back.jpg') no-repeat fixed center center / cover;
+    text-align: center;
+}
+
+.container{
+    color: white;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.navbar .profile{
+    border-radius: 80px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.navbar .navli{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 10px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.navbar .navli:last-child{
+    margin-right: 0;
+}
+
+.container h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.search-bar{
+    margin: 0 auto;
+    background-color: white;
+    width: 600px;
+    border-radius: 60px;
+    position: relative;
+}
+.search-bar .sbar{
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    background: url('../image/icons/search.svg') no-repeat 10px center / 24px;
+}
+
+.search-bar .s-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+}
+
+.search-bar .s-icon-mic{
+    right: 48px;
+}
+
+.search-bar .s-icon-cam{
+    right: 10px;
+}
+
+.search-bar .s-icon img{
+    height: 100%;
+}
+
+.box2{
+    outline: 1px solid red;
+
+}
