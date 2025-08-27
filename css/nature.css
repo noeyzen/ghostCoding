@@ -137,4 +137,34 @@ a{
     left: 50%;
     translate: -50% 0;
     opacity: 0.7;
+    animation-name: pingpong;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
 }
+
+.slogan-container{
+    animation-name: pingpong;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    /* animation: pingpong 2s 1s ease-out infinite alternate both; */
+}
+
+.ico-scroll:hover{
+    animation-play-state: paused;
+}
+
+@keyframes pingpong {
+    from {
+        translate: 0 0;
+    }
+    to {
+        translate: 0 -15px;
+    }
+}
+
