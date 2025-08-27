@@ -16,7 +16,7 @@
 }
 
 .page_header{
-    padding: 20px 0;
+    padding: 40px 0;
     position: relative;
 }
 
@@ -33,14 +33,14 @@
     line-height: 1;
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 40px;
     translate: 0 -50%;
 }
 
 .page_header .mode{
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 40px;
     translate: 0 -50%;
     width: 40px;
     height: 40px;
