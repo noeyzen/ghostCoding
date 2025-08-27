@@ -16,19 +16,77 @@
 }
 
 .page_header{
-    outline: 1px solid red;
     padding: 20px 0;
+    position: relative;
 }
 
 .page_header .navbar .navul{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .page_header .logo{
     font-size: 32px;
     font-weight: 600;
-    
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    translate: 0 -50%;
 }
 
+.page_header .mode{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    translate: 0 -50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.page_header .mode img{
+    width: 40px;
+}
+
+.slogan-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 240px;
+}
+.slogan-container h2{
+    font-weight: 600;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-container p{
+    font-weight: 500;
+}
+
+.slogan-container h2::after{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color:  #fff;
+    margin: 30px 0;
+}
+
+.ico-scroll{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    translate: -50% 0;
+}
